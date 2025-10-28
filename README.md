@@ -46,4 +46,4 @@ This repository contains the official evaluation code and data for the paper "**
   }
 ```
 🔥Please contact huhe@gml.ac.cn
- if you wish to contribute to the leaderboard or encounter any issues.
+ if you encounter any issues.
