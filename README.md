@@ -101,12 +101,12 @@ print("PsyLLM content:", content)
 
 ## 📜 Citation
 ```bibtex
-@article{hu2025emobench,
-  title={EmoBench-M: Benchmarking Emotional Intelligence for Multimodal Large Language Models},
-  author={Hu, He and Zhou, Yucheng and You, Lianzhong and Xu, Hongbo and Wang, Qianning and Lian, Zheng and Yu, Fei Richard and Ma, Fei and Cui, Laizhong},
-  journal={arXiv preprint arXiv:2502.04424},
+@article{hu2025beyond,
+  title={Beyond Empathy: Integrating Diagnostic and Therapeutic Reasoning with Large Language Models for Mental Health Counseling},
+  author={Hu, He and Zhou, Yucheng and Si, Juzheng and Wang, Qianning and Zhang, Hengheng and Ren, Fuji and Ma, Fei and Cui, Laizhong},
+  journal={arXiv preprint arXiv:2505.15715},
   year={2025}
-  }
+}
 ```
 
 ## 🧩 License
