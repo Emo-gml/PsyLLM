@@ -7,6 +7,10 @@
 <p align="center">
     <a href="https://emo-gml.github.io/"><img src="https://img.shields.io/badge/%F0%9F%8F%86-website-8A2BE2"></a>
     <a href="https://arxiv.org/abs/2505.15715"><img src="https://img.shields.io/badge/arXiv-2502.04424-b31b1b.svg"></a>
+    <a href="https://huggingface.co/GMLHUHE/PsyLLM"><img src="https://img.shields.io/badge/%F0%9F%A7%A0-Model%20Weights-4682B4" alt="Model Weights"></a>
+<a href="https://huggingface.co/datasets/GMLHUHE/OpenR1-Psy">
+  <img src="https://img.shields.io/badge/%F0%9F%93%96-Dataset-8A2BE2" alt="Dataset">
+</a>
     <a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License: Apache 2.0"/> </a>
 
 </p>
