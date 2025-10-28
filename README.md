@@ -1,7 +1,7 @@
 # PsyLLM
 
 <p align="center">
-  <img src="https://github.com/Emo-gml/PsyLLM/blob/main/images/logo.jpg" alt="project logo" width="200px" />
+  <img src="https://github.com/Emo-gml/PsyLLM/blob/main/logo.jpg" alt="project logo" width="200px" />
 </p>
 
 <p align="center">
