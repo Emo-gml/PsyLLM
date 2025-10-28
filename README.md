@@ -38,7 +38,7 @@ This repository contains the official evaluation code and data for the paper "**
 
 ## 📰 News
 - **[2025-10-28]** Created the official project website: https://github.com/Emo-gml/PsyLLM.
-- **[2025-07-08]** We open-sourced the model weights and dataset on Hugging Face!
+- **[2025-10-21]** We open-sourced the model weights and dataset on Hugging Face!
 - **[2025-05-12]** Paper submitted to arXiv: https://arxiv.org/abs/2505.15715.
 
 ## 📦 Dataset
