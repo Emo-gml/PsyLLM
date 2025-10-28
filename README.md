@@ -5,10 +5,7 @@
 </p>
 
 <p align="center">
-    <a href="https://emo-gml.github.io/">
-        <img src="https://img.shields.io/badge/%F0%9F%8F%86-website-8A2BE2" alt="Website">
-    </a>
-    <a href="https://arxiv.org/abs/2502.04424v2">
+    <a href="https://arxiv.org/pdf/2505.15715">
         <img src="https://img.shields.io/badge/arXiv-2502.04424-b31b1b.svg" alt="arXiv">
     </a>
     <a href="https://huggingface.co/GMLHUHE/PsyLLM">
