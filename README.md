@@ -43,9 +43,9 @@ This repository contains the official evaluation code and data for the paper "**
 
 ## 📦 Dataset
 <p align="center">
-  <img src="https://huggingface.co/datasets/GMLHUHE/OpenR1-Psy/resolve/main/openR1-psy.jpg" alt="OpenR1-Psy Dataset Overview" width="75%">
+  <img src="https://github.com/Emo-gml/PsyLLM/blob/main/openR1-psy.jpg" alt="OpenR1-Psy Dataset Overview" width="75%">
   <br>
-  <em>Figure: Overview of the OpenR1-Psy dataset integrating diagnostic and therapeutic reasoning.</em>
+  <em>Figure: Overview of the OpenR1-Psy dataset construction pipeline.</em>
 </p>
 
 **OpenR1-Psy** is a large-scale psychological counseling dataset that integrates **diagnostic reasoning** and **therapeutic reasoning** to support the training and evaluation of large language models for mental health dialogue generation.  
