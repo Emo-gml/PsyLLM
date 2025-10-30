@@ -6,25 +6,31 @@ from tqdm import tqdm
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from threading import Lock
 
-# ========== 配置区 ==========
-# 请在运行前填写你的输入/输出路径与 API Key
+# ========== CONFIGURATION ==========
+# Before running, specify your input/output file paths and API keys.
+# Keep API keys private and do NOT commit them to any public repository.
 INPUT_PATH = "path/to/input.json"
 OUTPUT_PATH = "path/to/output.json"
 API_KEYS = [
-    # 示例："sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    # Example: "sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 ]
 BASE_URL = "https://api.deepseek.com"
 MAX_WORKERS = min(32, len(API_KEYS) * 2)
 
-# ========== 初始化 ==========
+# ========== INITIALIZATION ==========
+# Compile the JSON object extraction pattern once for efficiency.
 JSON_OBJ_RE = re.compile(r"\{.*\}", re.DOTALL)
+
+# Initialize OpenAI client pool and a round-robin index.
 clients = [OpenAI(api_key=key, base_url=BASE_URL) for key in API_KEYS]
 client_index = 0
+
+# Thread lock to safely handle file writing and processed ID tracking.
 lock = Lock()
 
 
 def get_client():
-    """轮询返回 OpenAI 客户端实例"""
+    """Return a client instance using round-robin allocation."""
     global client_index
     client = clients[client_index]
     client_index = (client_index + 1) % len(clients)
@@ -32,7 +38,10 @@ def get_client():
 
 
 def inference_with_deepseek(prompt: str) -> str:
-    """调用 DeepSeek API 获取模型输出"""
+    """
+    Send the given prompt to the DeepSeek API and return the model's response.
+    Each request uses a rotating API client to balance load across keys.
+    """
     client = get_client()
     response = client.chat.completions.create(
         model="deepseek-chat",
@@ -46,22 +55,30 @@ def inference_with_deepseek(prompt: str) -> str:
 
 
 def extract_round_info(output: str):
-    """从模型输出中提取 JSON 内容"""
+    """
+    Extract and parse the JSON portion from model output.
+    Handles both raw JSON and Markdown-style code blocks.
+    """
     text = output.strip()
     if text.startswith("```json"):
         text = text[len("```json"):].strip()
     if text.endswith("```"):
         text = text[:-3].strip()
+
     try:
         data = json.loads(text)
     except Exception:
         match = JSON_OBJ_RE.search(text)
         data = json.loads(match.group()) if match else {}
+
     return data.get("rounds"), data.get("info_by_round")
 
 
 def load_processed_ids(path: str):
-    """加载已处理的帖子 ID，避免重复处理"""
+    """
+    Load already processed post IDs from the output file
+    to prevent duplicate processing during retries or restarts.
+    """
     processed = set()
     if os.path.exists(path):
         with open(path, 'r', encoding='utf-8') as f:
@@ -74,10 +91,14 @@ def load_processed_ids(path: str):
 
 
 def build_prompt(content: str) -> str:
-    """构建心理对话分析提示词"""
+    """
+    Build the analysis prompt for the psychological post.
+    The model should decide how many conversational rounds are needed (1–3)
+    and provide emotional or therapeutic themes for each.
+    """
     return f"""
-You are a compassionate and experienced psychological counselor. 
-Analyze the following user post and simulate the planning process 
+You are a compassionate and experienced psychological counselor.
+Analyze the following user post and simulate the planning process
 of a brief therapeutic conversation (1–3 rounds).
 
 Post content:
@@ -92,11 +113,15 @@ Return your output strictly in this JSON format:
 
 
 def main():
+    # Load source data and any previously processed post IDs
     posts = json.load(open(INPUT_PATH, 'r', encoding='utf-8'))
     processed_ids = load_processed_ids(OUTPUT_PATH)
 
+    # Open output file in append mode for incremental saving
     with open(OUTPUT_PATH, 'a', encoding='utf-8') as outf:
+
         def worker(post):
+            """Thread worker function to process a single post."""
             pid = post.get('post_id')
             with lock:
                 if pid in processed_ids:
@@ -108,19 +133,23 @@ def main():
                 rounds, info = extract_round_info(out)
                 if rounds is None or info is None:
                     return
+
                 result = {
                     "post_id": pid,
                     "file": post.get('file'),
                     "rounds": rounds,
                     "info_by_round": info
                 }
+
                 with lock:
                     outf.write(json.dumps(result, ensure_ascii=False) + "\n")
                     outf.flush()
                     processed_ids.add(pid)
+
             except Exception as e:
                 print(f"Error processing post {pid}: {e}")
 
+        # Multithreading: process all posts concurrently
         with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
             futures = [executor.submit(worker, post) for post in posts]
             for _ in tqdm(as_completed(futures), total=len(futures), desc="Processing"):
