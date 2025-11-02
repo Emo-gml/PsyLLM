@@ -27,7 +27,7 @@
     <a href="#-about">🌸 About</a> •
     <a href="#-news">📰 News</a> •
     <a href="#-dataset">📦 Dataset</a> •
-    <a href="#-dataset">🧠 PsyLLM</a> •
+    <a href="#-psyllm">🧠 PsyLLM</a> •
     <a href="#-quick-start">🔥 Quick Start</a> •
     <a href="#-citation">📜 Citation</a>
 </p>
