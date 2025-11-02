@@ -49,14 +49,11 @@ This repository contains the official evaluation code and data for the paper "**
   <em>Figure: Overview of the OpenR1-Psy dataset construction pipeline.</em>
 </p>
 
-**OpenR1-Psy** is a large-scale psychological counseling dataset that integrates **diagnostic reasoning** and **therapeutic reasoning** to support the training and evaluation of large language models for mental health dialogue generation.  
-Unlike traditional empathy-focused datasets, **OpenR1-Psy** incorporates explicit reasoning traces aligned with **DSM/ICD diagnostic standards** and diverse psychotherapy frameworks, including **CBT**, **ACT**, **psychodynamic**, and **humanistic therapy**.  
+**OpenR1-Psy** is a large-scale psychological counseling dataset that integrates **diagnostic reasoning** and **therapeutic reasoning** to support the training and evaluation of large language models for mental health dialogue generation. Unlike traditional empathy-focused datasets, **OpenR1-Psy** incorporates explicit reasoning traces aligned with **DSM/ICD diagnostic standards** and diverse psychotherapy frameworks, including **CBT**, **ACT**, **psychodynamic**, and **humanistic therapy**.  
 
 ## 🧠 PsyLLM
 
-**PsyLLM** is a large language model specialized in **psychological counseling** and **mental health dialogue generation**.  
-It unifies **diagnostic reasoning** and **therapeutic reasoning**, grounded in established clinical frameworks such as **DSM** and **ICD**,  
-and integrates diverse therapeutic paradigms including **CBT (Cognitive Behavioral Therapy)**, **ACT (Acceptance and Commitment Therapy)**, and **psychodynamic therapy**.
+**PsyLLM** is a large language model specialized in **psychological counseling** and **mental health dialogue generation**. It unifies **diagnostic reasoning** and **therapeutic reasoning**, grounded in established clinical frameworks such as **DSM** and **ICD**, and integrates diverse therapeutic paradigms including **CBT (Cognitive Behavioral Therapy)**, **ACT (Acceptance and Commitment Therapy)**, and **psychodynamic therapy**.
 
 PsyLLM is trained on the [**OpenR1-Psy**](https://huggingface.co/datasets/GMLHUHE/OpenR1-Psy) dataset  
 ([arXiv:2505.15715](https://arxiv.org/abs/2505.15715)), which features multi-turn counseling dialogues enriched with **explicit reasoning traces**.  
