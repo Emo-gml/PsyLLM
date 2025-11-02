@@ -55,9 +55,7 @@ This repository contains the official evaluation code and data for the paper "**
 
 **PsyLLM** is a large language model specialized in **psychological counseling** and **mental health dialogue generation**. It unifies **diagnostic reasoning** and **therapeutic reasoning**, grounded in established clinical frameworks such as **DSM** and **ICD**, and integrates diverse therapeutic paradigms including **CBT (Cognitive Behavioral Therapy)**, **ACT (Acceptance and Commitment Therapy)**, and **psychodynamic therapy**.
 
-PsyLLM is trained on the [**OpenR1-Psy**](https://huggingface.co/datasets/GMLHUHE/OpenR1-Psy) dataset  
-([arXiv:2505.15715](https://arxiv.org/abs/2505.15715)), which features multi-turn counseling dialogues enriched with **explicit reasoning traces**.  
-These traces enable **clinically informed**, **empathetic**, and **interpretable** AI-assisted therapeutic interactions.
+PsyLLM is trained on the [**OpenR1-Psy**](https://huggingface.co/datasets/GMLHUHE/OpenR1-Psy) dataset ([arXiv:2505.15715](https://arxiv.org/abs/2505.15715)), which features multi-turn counseling dialogues enriched with **explicit reasoning traces**. These traces enable **clinically informed**, **empathetic**, and **interpretable** AI-assisted therapeutic interactions.
 
 The model training and fine-tuning pipeline are implemented using the open-source framework [**LLaMA-Factory**](https://github.com/hiyouga/LLaMA-Factory).
 
