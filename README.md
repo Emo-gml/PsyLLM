@@ -57,7 +57,7 @@ This repository contains the official evaluation code and data for the paper "**
 
 PsyLLM is trained on the [**OpenR1-Psy**](https://huggingface.co/datasets/GMLHUHE/OpenR1-Psy) dataset, which features multi-turn counseling dialogues enriched with **explicit reasoning traces**. These traces enable **clinically informed**, **empathetic**, and **interpretable** AI-assisted therapeutic interactions.
 
-The model training and fine-tuning pipeline are implemented using the open-source framework [**LLaMA-Factory**](https://github.com/hiyouga/LLaMA-Factory).
+The model training and fine-tuning pipeline are implemented using the open-source framework [**LLaMA-Factory**](https://github.com/hiyouga/LLaMA-Factory). For more details, please refer to the [Code](https://github.com/Emo-gml/PsyLLM/tree/main/Code).
 
 ## 🔥 Quick Start
 ```python
