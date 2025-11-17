@@ -33,7 +33,7 @@
 </p>
 
 ## 🌸 About
-This repository contains the official evaluation code and data for the paper "**Beyond Empathy: Integrating Diagnostic and Therapeutic Reasoning with Large Language Models for Mental Health Counseling**". See more details in our [paper](https://arxiv.org/abs/2505.15715). If you find this project helpful, feel free to ⭐ it! [PsyLLM](https://github.com/Emo-gml/PsyLLM)
+This repository contains the official evaluation code and data for the paper "**Beyond Empathy: Integrating Diagnostic and Therapeutic Reasoning with Large Language Models for Mental Health Counseling**". See more details in our [paper](https://arxiv.org/abs/2505.15715). If you find this project helpful, feel free to ⭐ it!
 
 > PsyLLM is the first large language model explicitly designed to combine diagnostic and therapeutic reasoning for mental health counseling. Unlike traditional LLM-based systems that mainly provide empathetic or surface-level responses, PsyLLM simulates the reasoning process of professional therapists — assessing symptoms, applying international diagnostic standards (DSM/ICD), and selecting suitable therapeutic strategies (such as CBT, ACT, and psychodynamic approaches) to produce clinically grounded, context-sensitive counseling dialogues.
 
