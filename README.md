@@ -52,9 +52,9 @@ This repository contains the official evaluation code and data for the paper "**
 
 **OpenR1-Psy** is a large-scale psychological counseling dataset that integrates **diagnostic reasoning** and **therapeutic reasoning** to train and evaluate large language models for mental health dialogue generation. It goes beyond empathy-focused corpora by incorporating explicit reasoning traces grounded in **DSM/ICD diagnostic standards** and diverse psychotherapy frameworks such as **CBT**, **ACT**, **psychodynamic**, and **humanistic therapy**.
 
-The original Reddit posts used in this project are sourced from three publicly available research datasets:  
-[LRF](https://github.com/drmuskangarg/Irf), [Identifying Depression](https://github.com/Inusette/Identifying-depression), and [Dreaddit](http://www.cs.columbia.edu/~eturcan/data/dreaddit.zip).  
-All datasets are used strictly for research purposes under their original licenses and usage guidelines.
+The original Reddit posts used in **OpenR1-Psy** are derived from three publicly available research datasets:  
+[LRF](https://github.com/drmuskangarg/Irf), [Identifying Depression](https://github.com/Inusette/Identifying-depression), and [Dreaddit](http://www.cs.columbia.edu/~eturcan/data/dreaddit.zip). All datasets are used strictly for research purposes in accordance with their original licenses and usage guidelines.
+
 
 
 ## 🧠 PsyLLM
