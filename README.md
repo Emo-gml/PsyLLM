@@ -1,23 +1,26 @@
 # PsyLLM
 
 <p align="center">
-  <img src="https://github.com/Emo-gml/PsyLLM/blob/main/logo.jpg" alt="project logo" width="200px" />
-</p>
-
-<p align="center">
     <a href="https://arxiv.org/pdf/2505.15715">
         <img src="https://img.shields.io/badge/arXiv-2502.04424-b31b1b.svg" alt="arXiv">
     </a>
-    <a href="https://huggingface.co/GMLHUHE/PsyLLM">
-        <img src="https://img.shields.io/badge/%F0%9F%A7%A0-Model%20Weights-4682B4" alt="Model Weights">
+    <a href="https://huggingface.co/GMLHUHE/PsyLLM-8B">
+        <img src="https://img.shields.io/badge/🧠-PsyLLM--8B-4682B4" alt="Model Weights 8B">
+    </a>
+    <a href="https://huggingface.co/GMLHUHE/PsyLLM-4B">
+        <img src="https://img.shields.io/badge/🧠-PsyLLM--4B-5A67D8" alt="Model Weights 4B">
+    </a>
+    <a href="https://huggingface.co/GMLHUHE/PsyLLM-1.7B">
+        <img src="https://img.shields.io/badge/🧠-PsyLLM--1.7B-6B46C1" alt="Model Weights 1.7B">
     </a>
     <a href="https://huggingface.co/datasets/GMLHUHE/OpenR1-Psy">
-        <img src="https://img.shields.io/badge/%F0%9F%93%96-Dataset-8A2BE2" alt="Dataset">
+        <img src="https://img.shields.io/badge/📖-Dataset-8A2BE2" alt="Dataset">
     </a>
     <a href="https://opensource.org/licenses/Apache-2.0">
         <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License: Apache 2.0">
     </a>
 </p>
+
 
 
 
