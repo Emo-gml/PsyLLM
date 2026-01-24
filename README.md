@@ -1,5 +1,7 @@
 # PsyLLM
-
+<p align="center">
+  <img src="https://github.com/Emo-gml/PsyLLM/blob/main/logo.jpg" alt="project logo" width="200px" />
+</p>
 <p align="center">
     <a href="https://arxiv.org/pdf/2505.15715">
         <img src="https://img.shields.io/badge/arXiv-2502.04424-b31b1b.svg" alt="arXiv">
