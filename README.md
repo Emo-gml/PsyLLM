@@ -44,7 +44,7 @@ This repository contains the official evaluation code and data for the paper "**
 
 ## 📰 News
 - **[2026-11-02]** 🎉 Our paper has been accepted to IEEE Transactions on Affective Computing (TAFFC)!
-- **[2026-04-19]** 🚀 PsyLLM achieves state-of-the-art performance among domain-specific models on the [PSYCHEPASS](https://arxiv.org/pdf/2601.20330) benchmark.
+- **[2026-04-19]** 🚀 PsyLLM achieves state-of-the-art performance among domain-specific models on the [PSYCHEPASS](https://aclanthology.org/2026.findings-acl.1993/) benchmark.
 - **[2025-10-28]** Created the official project website: https://github.com/Emo-gml/PsyLLM.
 - **[2025-10-21]** We open-sourced the model weights and dataset on Hugging Face!
 - **[2025-05-12]** Paper submitted to arXiv: https://arxiv.org/abs/2505.15715.
