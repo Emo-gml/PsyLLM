@@ -43,6 +43,7 @@ This repository contains the official evaluation code and data for the paper "**
 > PsyLLM is the first large language model explicitly designed to combine diagnostic and therapeutic reasoning for mental health counseling. Unlike traditional LLM-based systems that mainly provide empathetic or surface-level responses, PsyLLM simulates the reasoning process of professional therapists — assessing symptoms, applying international diagnostic standards (DSM/ICD), and selecting suitable therapeutic strategies (such as CBT, ACT, and psychodynamic approaches) to produce clinically grounded, context-sensitive counseling dialogues.
 
 ## 📰 News
+- **[2026-11-02]** 🎉 Our paper has been accepted to IEEE Transactions on Affective Computing (TAFFC)!
 - **[2026-04-19]** 🚀 PsyLLM achieves state-of-the-art performance among domain-specific models on the [PSYCHEPASS](https://arxiv.org/pdf/2601.20330) benchmark.
 - **[2025-10-28]** Created the official project website: https://github.com/Emo-gml/PsyLLM.
 - **[2025-10-21]** We open-sourced the model weights and dataset on Hugging Face!
